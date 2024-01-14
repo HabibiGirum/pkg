@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: windows
 
     steps:
       - name: Checkout code
@@ -15,7 +15,7 @@ jobs:
 
       - name: Install CMake
         run: |
-          brew install cmake
+          choco install cmake
 
       - name: Create build directory
         run: mkdir build
@@ -23,16 +23,11 @@ jobs:
       - name: Run CMake and CPack
         run: |
           cd build
-          sudo cmake ..
-          sudo cpack
-
-      # - name: Execute post-install script
-        # run: |
-          # cd build
-          # ./postinstall.sh  # Execute the post-install script
+          cmake ..
+          cpack
 
       - name: Upload package
         uses: actions/upload-artifact@v2
         with:
           name: package
-          path: build/Vistar--1.macos.pkg
+          path: build/Vistar-1.0.0-win64.msi  # Adjust the filename as needed

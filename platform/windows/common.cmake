@@ -8,13 +8,11 @@
 #
 
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}")
-set(OSQUERY_BITNESS "" CACHE STRING "osquery build bitness (32 or 64)")
+# set(OSQUERY_BITNESS "" CACHE STRING "osquery build bitness (32 or 64)")
 
-if ("${OSQUERY_BITNESS}" STREQUAL "32")
-  set(PROGRAM_FILES_DIR "Program Files (x86)")
-else()
-  set(PROGRAM_FILES_DIR "Program Files")
-endif()
+
+set(PROGRAM_FILES_DIR "Program Files")
+
 
 set(directory_name_list
   "certs"
