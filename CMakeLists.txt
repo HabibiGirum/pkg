@@ -1,4 +1,4 @@
-this is my CMakeLists.txt file and add installation type on this 
+# this is my CMakeLists.txt file and add installation type on this 
 # CMakeLists.txt
 cmake_minimum_required(VERSION 3.10)
 project(Vistar)
