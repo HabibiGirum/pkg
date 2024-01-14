@@ -17,7 +17,7 @@ set(PROGRAM_FILES_DIR "Program Files")
 set(directory_name_list
   "certs"
   "packs"
-  "log"
+  
 )
 
 set(file_name_list
