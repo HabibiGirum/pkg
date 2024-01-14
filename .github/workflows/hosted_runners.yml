@@ -30,4 +30,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: package
-          path: build/Vistar-1.0.0-win64.msi  # Adjust the filename as needed
+          path: build/Vistar-1.0.0.exe  
+          
+          # Adjust the filename as needed
