@@ -1,7 +1,7 @@
 # this is my CMakeLists.txt file and add installation type on this 
 # CMakeLists.txt
 cmake_minimum_required(VERSION 3.10)
-project(Vistar)
+project(osquery)
 
 # Install the script file to /usr/local/bin
 # install(PROGRAMS script.sh DESTINATION /usr/local/bin)
