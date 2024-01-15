@@ -23,7 +23,7 @@ jobs:
       - name: Run CMake and CPack
         run: |
           cd build
-          cmake ..
+          cmake --build . --target package
           cpack
 
       - name: Upload package
